@@ -1,6 +1,6 @@
 // Heroku defines the environment variable PORT, and requires the binding address to be 0.0.0.0
 var host = process.env.PORT ? '0.0.0.0' : '127.0.0.1';
-var port = process.env.PORT || 8080;
+var port = process.env.PORT || 8800;
 
 // Grab the blacklist from the command-line so that we can update the blacklist without deploying
 // again. CORS Anywhere is open by design, and this blacklist is not used, except for countering
@@ -26,6 +26,6 @@ cors_proxy.createServer({
     // Do not add X-Forwarded-For, etc. headers, because Heroku already adds it.
     xfwd: false,
   },
-}).listen(port, host, function() {
+}).listen(port, function() {
   console.log('Running CORS Anywhere on ' + host + ':' + port);
 });

@@ -1,6 +1,6 @@
 *.swp
 *.tmp
 *.log
-
+.remote-sync.json
 coverage/
 node_modules/

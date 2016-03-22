@@ -1,0 +1,9 @@
+// JavaScript Document
+{
+  "apps" : [{
+	"name"        : "cors",
+	"script"      : "server.js",
+	"watch"       : "../",
+	"log_date_format"  : "YYYY-MM-DD HH:mm Z",
+  }]
+}
